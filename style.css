@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-image: url("https://picsum.photos/id/122/1920/1080");
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.btn {
+  border: 1px solid white;
+  background-color: transparent;
+  margin-top: 10px;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+.btn:hover {
+  box-shadow: 1px 1px 10px 5px aqua;
+  border-color: aqua;
+}
+
+.home .btn:hover,
+.home .btn a:hover {
+  opacity: 1;
+  color: aqua;
+}
+
+.container .navbar {
+  background-color: rgba(145, 13, 13, 0.418);
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.container .navbar-left i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+}
+.container .navbar-left i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.container .navbar-right i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+}
+
+.container .navbar-right i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .home {
+  margin: 60px 30px;
+  font-family: "Croissant One", cursive;
+  line-height: 30px;
+}
+
+.container .home p {
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+
+.container .home p span {
+  font-weight: bold;
+}
+
+.home .btn a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.navbar-right i {
+  float: right;
+}
+
+.dropdown-content {
+  background-color: rgba(145, 13, 13, 0.418);
+  margin-top: 1px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  padding-right: 29px;
+  display: none;
+  padding-bottom: 10px;
+}
+
+.dropdown-content :active {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 5px -5px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+
+.dropdown-content a:hover {
+  opacity: 1;
+}
